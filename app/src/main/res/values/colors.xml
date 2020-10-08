@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009944</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="homeBackground">#afb3b5</color>
+    <color name="colorTitleBackground">#FFF700</color>
+    <color name="colorDark">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="gray">#d9d9d9</color>
+    <color name="cpb_red">#FF0000</color>
+    <color name="cpb_green">#00e600</color>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:background="@color/gray">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_corners"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Климат-контроль:"
+        android:textSize="20dp"
+        android:textColor="@color/colorDark"/>
+    <com.rm.rmswitch.RMSwitch
+
+        android:id="@+id/climat_switch"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="1dp"
+        app:checked="false"
+        app:enabled="true"
+        app:forceAspectRatio="false"
+        app:switchBkgCheckedColor="@color/colorTitleBackground"
+        app:switchBkgNotCheckedColor="@color/gray"
+        app:switchDesign="large"
+        app:switchToggleCheckedColor="@color/gray"
+
+        app:switchToggleNotCheckedColor="@color/homeBackground" />
+
+</RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

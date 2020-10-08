@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SmartHome V1.1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="name_activity_home">Главная</string>
+
+    <string name="name_activity_light">Освещение</string>
+    <string name="name_activity_climat">Климат-контроль</string>
+    <string name="name_activity_security">Безопасность</string>
+    <string name="url_lamp_on">http://192.168.1.222/?ArduinoPIN6=on</string>
+    <string name="url_lamp_off">http://192.168.1.222/?ArduinoPIN6=off</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

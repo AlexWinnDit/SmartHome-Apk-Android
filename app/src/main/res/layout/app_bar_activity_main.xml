@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.smarthomev11.ActivityMain">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    
+    <include layout="@layout/content_activity_main"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/icon_check"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lamp_view_gos"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="48dp"
+            android:text="22°C 67%"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/lamp_view_gos"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/imageView4"
+            android:layout_column="0"
+            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_row="0"
+            android:layout_toLeftOf="@+id/imageView5"
+            android:layout_toStartOf="@+id/imageView5"
+            android:src="@drawable/lamp_off" />
+
+        <ImageView
+            android:id="@+id/lamp_view_"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/imageView10"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_column="0"
+
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_row="0"
+            android:src="@drawable/lamp_off" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/lamp_view_"
+            android:layout_toRightOf="@+id/lamp_view_"
+            android:src="@drawable/climat_off" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/lock_on"
+            android:layout_below="@+id/imageView3"
+            android:layout_toLeftOf="@+id/imageView5"
+            android:layout_toStartOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/security_off"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_toLeftOf="@+id/imageView9"
+            android:layout_toStartOf="@+id/imageView9" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignEnd="@+id/imageView3"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_alignTop="@+id/imageView5"
+            android:src="@drawable/water_off" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/imageView5"
+            android:layout_alignStart="@+id/imageView5"
+            android:layout_below="@+id/textView"
+            android:src="@drawable/gas_off" />
+        <ImageView
+            android:id="@+id/lamp_view_fire"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fire_off"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_alignLeft="@+id/lamp_view_gos"
+            android:layout_alignStart="@+id/lamp_view_gos"
+            android:layout_marginTop="22dp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

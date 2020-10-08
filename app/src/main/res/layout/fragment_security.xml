@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/gray"
+            android:isScrollContainer="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_corners"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дверь:"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorDark"
+                    android:layout_marginTop="12dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lock_btn"
+                    android:text="Закрыто"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/circlre_btn"
+                    android:layout_marginLeft="265dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sec_view"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="80dp"
+
+                android:background="@drawable/circle_corners">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Сигнализация:"
+                    android:textColor="@color/colorDark"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/sec_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="260dp"
+                    android:background="@drawable/circlre_btn"
+                    android:text="Выкл"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/sec_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:visibility="invisible">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Внимание!!! Сработала сигнализация!"
+                        android:textAllCaps="true"
+                        android:textColor="@color/cpb_red"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edit_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:hint="Введите пароль"
+                        android:inputType="textPassword" />
+
+                    <Button
+                        android:id="@+id/ok_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="260dp"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/circlre_btn2"
+                        android:text="ок"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/err_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:text="Неверный пароль!"
+                        android:textColor="@color/cpb_red"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/datch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="210dp"
+                android:background="@drawable/circle_corners">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Датчики:"
+                    android:textColor="@color/colorDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Датчик газа и задымления:"
+                    android:textColor="@color/colorDark"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/gas_off"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/gas_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="160dp"
+                    android:text="Датчик возгарания:"
+                    android:textColor="@color/colorDark"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/fire_off"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="130dp"
+                    android:background="@drawable/fire_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="260dp"
+                    android:text="Датчик затопления:"
+                    android:textColor="@color/colorDark"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/water_off"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="230dp"
+                    android:background="@drawable/water_off" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
